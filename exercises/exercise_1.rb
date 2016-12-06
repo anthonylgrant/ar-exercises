@@ -16,7 +16,7 @@ Store.create([
     womens_apparel: true,
   },
   {
-    name: "Burnaby",
+    name: "Richmond",
     annual_revenue: 1260000,
     mens_apparel: false,
     womens_apparel: true,
@@ -26,18 +26,14 @@ Store.create([
     annual_revenue: 190000,
     mens_apparel: true,
     womens_apparel: false,
+  },
+  {
+    name: "Langley",
+    annual_revenue: -20,
+    mens_apparel: true,
+    womens_apparel: false,
   }
 ])
 
-pp Store.all
-pp Store.count
-
-# CREATE TABLE "stores" (
-# "id" serial primary key,
-# "name" character varying,
-# "annual_revenue" integer,
-# "mens_apparel" boolean,
-# "womens_apparel" boolean,
-# "created_at" timestamp NOT NULL,
-# "updated_at" timestamp NOT NULL
-# )
+# pp Store.all
+# pp Store.count

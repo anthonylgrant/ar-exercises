@@ -19,6 +19,11 @@ puts "----------"
     first_name: "Don",
     last_name: "Burls",
     hourly_rate: 70
+  },
+  {
+    first_name: "Javale",
+    last_name: "Mcgee",
+    hourly_rate: 70
   }
 ])
 
@@ -35,4 +40,5 @@ puts "----------"
   }
 ])
 
-pp Employee.all
+# pp Store.all
+# pp Employee.all

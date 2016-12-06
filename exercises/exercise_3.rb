@@ -11,5 +11,5 @@ puts "----------"
 
 @store3.destroy
 
-pp Store.all
-pp Store.count
+# pp Store.all
+# pp Store.count
