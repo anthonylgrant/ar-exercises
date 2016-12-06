@@ -41,7 +41,9 @@ end
 # pp @mens_stores.collect { |s| "The #{s[:name]} store had an annual revenue of #{s[:annual_revenue]}"}
 
 
-@womens_stores = Store.where(womens_apparel: true).where("annual_revenue < ?", 1000000)
+# METHOD WITH FIND:
+# @womens_stores = Store.where(womens_apparel: true).where("annual_revenue < ?", 1000000)
+@womens_stores = Store.where("womens_apparel = ? AND annual_revenue < ?", true, 1000000)
 @womens_stores.each do |store|
   puts "Womens Store Report: The #{store[:name]} store had an annual revenue of #{store[:annual_revenue]}"
 end
